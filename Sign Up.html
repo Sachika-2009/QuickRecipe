@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS for login and sign up.css">
+        <link rel="icon" href="firework.png">
+        <title>Sign up to Homemade Recipes</title>
+        <script>
+            function pmpt()
+            {
+                var n=prompt ("What is you age?");
+                var a=100-n
+            if (n<=10)
+            {window.location.href="You cannot visit.html";}
+
+            else if (a!=100-n)
+            {window.location.href="You cannot visit.html";}
+
+            else if (n>=100){window.location.href="You cannot visit.html";}
+
+            ;}
+        
+            
+            function check_pass()
+ {
+    var pw1 = document.getElementById('psw1').value 
+    var pw2 = document.getElementById('psw2').value
+    var v = document.getElementById('value').value
+
+if (v == ""){
+    alert("Provide a Username");
+}
+
+else if (pw1 == "") 
+{alert("Provide a Password");
+} 
+
+else if (pw2 == "") 
+{alert("Confirm your Password");
+}
+
+else if (pw1 != pw2)
+{alert("Password does not match");}
+
+else if (pw1 == pw2){
+window.location.href="index.html";
+}
+;}
+
+function ok()
+
+
+            </script>
+            <style>
+                 body{
+                    background-image: url('border\ background\ login.jpg');position:initial;}
+          .link{color:orange;}
+          .link:link{color:orangered;}
+          header{background-image:url("Login\ pic\ thing.gif");}
+          #background{background-image:radial-gradient(rgb(179, 179, 241), rgb(217, 217, 245));}
+            </style>
+    </head>
+    <body onload="pmpt()" id="idk">
+        <div id="background">
+        <header><h1>
+            Sign Up!</h1></header>
+            <br><br>
+            <br>
+            <div id="signup"><a href="index.html"><img src="back button.png" width="50px" height="50px"></a></div>
+            <br>
+            <br>
+            <br>
+            <form onmouseover="blur()">
+            Username: <input type="text" required id="value">
+            <br><br>
+            Password: <input type="password" required name="pswd1" id="psw1">
+            <br><br>
+            Confirm Password: <input type="password" required  name="pswd2" id="psw2">
+            <br><br>
+            Gender: 
+            <br>
+            <div id="value" required>
+            <input type="radio" value="Male" name="GENDER"> Male 
+            <br>
+            <input type="radio" value="Female" name="GENDER"> Female 
+            <br>
+            <input type="radio" value="Prefer not to say" name="GENDER"> Prefer not to say
+            </div>
+            <br><br> 
+            Reasons why you signed up:
+            <br>
+            <input type="checkbox"> Just for fun<br>
+            <input type="checkbox"> To try out some recipes<br>
+            <input type="checkbox"> Other<br>
+            <br>
+            <div style="text-align:center;background-color:rgb(223, 134, 148);border:solid 2px rgb(146, 22, 90)">
+                <a><div onclick="check_pass()" id="submit" disabled="true">Sign Up!</div></div></a>
+        </div>
+            </form>
+
+    </body>
+    </html>
